@@ -6,7 +6,8 @@ import { changeSidebarVisiblity } from '../../features/sidebarSlice';
 
 const cn = classNames.bind(styles);
 
-// Written code inside this component is to demonstrate how redux toolkit works
+// Written code inside this component is an example of how redux toolkit works
+// Will be removed after first story is started on this component
 const AboutUsPage = () => {
   const dispatch = useDispatch();
   const { isSidebarOpen } = useSelector((state) => state.sidebar);
