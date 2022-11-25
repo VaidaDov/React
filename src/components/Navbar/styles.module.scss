@@ -1,1 +1,52 @@
-/* comment to avoid empty css error */
+@import '../../sass/global';
+
+.header {
+  align-items: center;
+  background-color: $background-color;
+  display: flex;
+  flex-direction: row;
+  height: 96px;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  top: 0;
+  width: 100%;
+
+  &__logo {
+    height: 40px;
+    width: 222px;
+  }
+}
+
+.navbar {
+  align-items: center;
+  background-color: $background-color;
+  display: flex;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  height: 21px;
+  justify-content: space-between;
+
+  &__menu {
+    margin: 0;
+    padding-left: 0;
+  }
+
+  &__item {
+    color: $dark-color;
+    cursor: pointer;
+    display: inline;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    padding-right: 24px;
+    position: relative;
+    width: 100%;
+    @include reset-list-style;
+
+    &:last-of-type {
+      padding-right: 0;
+    }
+  }
+}
