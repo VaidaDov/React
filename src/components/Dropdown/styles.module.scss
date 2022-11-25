@@ -1,0 +1,42 @@
+@import '../../sass/global';
+
+.dropdown {
+  background: $light-color;
+  border-radius: 10px;
+  height: 221px;
+  left: -50px;
+  position: absolute;
+  top: 47.5px;
+  width: 220px;
+
+  &__menu {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    list-style: none;
+    padding: 10px 0 0;
+    top: 21px;
+    width: 220px;
+  }
+
+  li {
+    align-items: flex-start;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: 48px;
+    justify-content: center;
+    padding: 0 20px;
+    size: 14px;
+  }
+
+  li:hover {
+    background: $white-color;
+  }
+
+  link {
+    display: block;
+    height: 100%;
+    text-decoration: none;
+    width: 100%;
+  }
+}
